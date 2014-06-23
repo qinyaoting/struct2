@@ -11,18 +11,28 @@
 	// http://wenku.baidu.com/link?url=ov8urRghPI8zjvUF1iH9518qKpTU1sxGJLNabZrwjcJnMjdvEo8P8QG2BZqnogOhoNDgbF9sL3SIJpzHRv0ZvOXq9ZYmP3EdUvcKKjWIIeu
 
 	int main() {
-		say_hello();
+		//say_hello();
+		int i;
+		for(int i = 0;i < 40;i++)
+			printf("%d", Fbi(i));
 		return 0;
 	}
 
-typedef int SElemType;
+	int Fbi(int i)
+	{
+		if (i<2)
+			return i==0?0:1;
+		return Fbi(i-1) + Fbi(i-2);
+	}
+
+/*typedef int SElemType;
 typedef struct
 {
 	SElemType data[MAXSIZE];
 	int top;
 }SqStack;
 
-/* 插入元素e为新的栈顶元素 */
+ 插入元素e为新的栈顶元素
 Status Push(SqStack *S, SElemType e)
 {
 	if (S-> top == MAXSIZE-1)	//栈满
@@ -34,7 +44,7 @@ Status Push(SqStack *S, SElemType e)
 	return OK;
 }
 
-/* 若栈不空，则删除S的栈定元素，用e返回其值，并返回OK，否则返回ERROR  */
+ 若栈不空，则删除S的栈定元素，用e返回其值，并返回OK，否则返回ERROR
 Status Pop(SqStack *S, SElemType *e)
 {
 	if (S->top==-1)
@@ -52,7 +62,7 @@ typedef struct
 	int top2;
 }SqDoubleStack;
 
-/* 插入元素e为新的栈顶元素 */
+ 插入元素e为新的栈顶元素
 Status Push(SqDoubleStack *S, SElemType e, int stackNumber)
 {
 	if (S->top1+1==S->top2)		// 栈已满，不能再push新元素了
@@ -63,7 +73,7 @@ Status Push(SqDoubleStack *S, SElemType e, int stackNumber)
 		s->data[--s->top2]=e;	//若栈2 则先top2-1后给数组元素
 	return OK;
 
-}
+}*/
 
 
 
