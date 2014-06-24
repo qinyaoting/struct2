@@ -12,7 +12,7 @@
 
 	int main() {
 		//say_hello();
-		int i;
+		int i = 0;
 		for(int i = 0;i < 40;i++)
 			printf("%d", Fbi(i));
 		return 0;
