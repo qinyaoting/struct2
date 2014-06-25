@@ -44,8 +44,9 @@
 </toolChain>
 </folderInfo>
 <sourceEntries>
+<entry excluding="chapter5|chapter4" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 <entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="chapter4"/>
-<entry excluding="chapter4" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="chapter5"/>
 </sourceEntries>
 </configuration>
 </storageModule>

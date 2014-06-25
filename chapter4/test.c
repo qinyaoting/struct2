@@ -49,20 +49,20 @@ typedef struct
 }LinkQueue;
 
 /* 初始化一个空队列 Q */
-Status InitQueue(SqQueue *Q)
+/*Status InitQueue(SqQueue *Q)
 {
 	Q->front=0;
 	Q->rear=0;
 	return OK;
 }
 
-/* 返回 Q 的元素个数，也就是队列的当前长度 */
+ 返回 Q 的元素个数，也就是队列的当前长度
 int QueueLength(SqQueue Q)
 {
 	return (Q.rear-Q.front+MAXSIZE)%MAXSIZE;
 }
 
-/* 队列未满，则插入元素e为Q新的队尾元素 */
+ 队列未满，则插入元素e为Q新的队尾元素
 Status enQueue(LinkQueue *Q, QElemType e)
 {
 	QueuePtr s = (QueuePtr)malloc(sizeof(QNode));
@@ -75,7 +75,7 @@ Status enQueue(LinkQueue *Q, QElemType e)
 	return OK;
 }
 
-/* 队列不空，则删除Q中对头元素，用e返回其值 */
+ 队列不空，则删除Q中对头元素，用e返回其值
 Status DeQueue(LinkQueue *Q, QElemType e)
 {
 	QueuePtr p;
@@ -88,7 +88,7 @@ Status DeQueue(LinkQueue *Q, QElemType e)
 		Q->rear=Q->front;
 	free(p);
 	return OK;
-}
+}*/
 
 
 
