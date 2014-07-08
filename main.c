@@ -10,13 +10,13 @@
 
 	// http://wenku.baidu.com/link?url=ov8urRghPI8zjvUF1iH9518qKpTU1sxGJLNabZrwjcJnMjdvEo8P8QG2BZqnogOhoNDgbF9sL3SIJpzHRv0ZvOXq9ZYmP3EdUvcKKjWIIeu
 
-	/*int main() {
+	int main() {
 		//say_hello();
-		int i = 0;
+		/*int i = 0;
 		for(int i = 0;i < 40;i++)
 			printf("%d", Fbi(i));
-		return 0;
-	}*/
+		return 0;*/
+	}
 
 	int Fbi(int i)
 	{

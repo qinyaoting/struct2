@@ -9,9 +9,12 @@ RM := rm -rf
 # All of the sources participating in the build are defined here
 -include sources.mk
 -include subdir.mk
+-include chapter8/subdir.mk
+-include chapter7/subdir.mk
 -include chapter6/subdir.mk
 -include chapter5/subdir.mk
 -include chapter4/subdir.mk
+-include chapter19/subdir.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)
