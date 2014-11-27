@@ -9,17 +9,12 @@
 	// 第一个结点的存储位置叫做头指针，最后一个结点的存储位置为 NULL或 ^
 	// 有时候为了方便，会在单链表的第一个结点前附设一个结点，称为头结点，头结点的数据域可以不存储任何信息
 
-typedef struct Node
+
+
+
+
+void union2(List *La, List *Lb)
 {
-	ElemType data;
-	struct Node *next;
-} Node;
-typedef struct Node *LinkList;
-
-
-
-void union(List *La, List *Lb)
-		{
 	int La_len,Lb_len,i;
 	ElemType e;
 	La_len = ListLength(La);
@@ -27,18 +22,13 @@ void union(List *La, List *Lb)
 	for (i=1;i<=Lb;i++)
 	{
 		GetElem(Lb, i, e);
-		if (!LocateElem(La, e, equal))
+		if (!LocateElem(La, e, equal()))
 			ListInsert(La, ++La_len, e);
 	}
-		}
+}
 
-#define MAXSIZE 20
-typedef int ElemType;
-typedef struct
-{
-	ElemType data[MAXSIZE];
-	int length;
-};
+
+
 
 // 顺序存储结构
 #define OK 1
